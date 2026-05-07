@@ -1,0 +1,27 @@
+[
+  {
+    "id": "118ffeee-943d-40b2-af63-2416da4beca9",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-forgotten/stable/manifest.json"
+  },
+  {
+    "id": "72a6ff39-2bff-534c-9216-d03cd38e7346",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-offline-importer/stable/manifest.json"
+  },
+  {
+    "id": "031ccc48-94d6-5100-a9e0-e26c49a33319",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-release-exporter/stable/manifest.json"
+  },
+  {
+    "id": "b81acd7e-6641-47e7-a383-0a8b4304408e",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-release-retry/stable/manifest.json"
+  },
+  {
+    "id": "f7e9b467-ef01-5aa6-92ba-3a6079f15bf6",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-relocation-plus/stable/manifest.json"
+  }
+]
