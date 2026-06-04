@@ -19,6 +19,7 @@ This will automatically include all available plugins:
 | [Release Importer/Exporter](https://github.com/revam/dotnet-shoko-plugin-release-exporter) | Import/export releases from filesystem |
 | [Release Retry](https://github.com/revam/dotnet-shoko-plugin-release-retry) | Re-attempt release searches after failure |
 | [Relocation+](https://github.com/revam/dotnet-shoko-plugin-relocation-plus) | Relocate video extra files near video files |
+| [Upload File](https://github.com/revam/dotnet-shoko-plugin-upload-file) | File uploads to named staging areas |
 
 ## License
 

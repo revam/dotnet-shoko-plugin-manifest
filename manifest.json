@@ -23,5 +23,10 @@
     "id": "f7e9b467-ef01-5aa6-92ba-3a6079f15bf6",
     "type": "manifest",
     "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-relocation-plus/stable/manifest.json"
+  },
+  {
+    "id": "db81e3b3-67de-48d6-acd0-7da499cb30c5",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-upload-file/stable/manifest.json"
   }
 ]
