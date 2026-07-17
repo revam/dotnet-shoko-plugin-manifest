@@ -5,6 +5,11 @@
     "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-forgotten/stable/manifest.json"
   },
   {
+    "id": "0bb96da1-c996-44a3-9ddb-27961cce0c4d",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-image-manager/stable/manifest.json"
+  },
+  {
     "id": "72a6ff39-2bff-534c-9216-d03cd38e7346",
     "type": "manifest",
     "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-offline-importer/stable/manifest.json"
