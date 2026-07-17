@@ -33,5 +33,10 @@
     "id": "db81e3b3-67de-48d6-acd0-7da499cb30c5",
     "type": "manifest",
     "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-upload-file/stable/manifest.json"
+  },
+  {
+    "id": "a7f3c291-8b4e-4d6a-9c1d-2e5f7b8a0c3d",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-filter-helper/stable/manifest.json"
   }
 ]
