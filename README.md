@@ -14,8 +14,8 @@ This will automatically include all available plugins:
 
 | Plugin | Description |
 |--------|-------------|
-| [Forgotten](https://github.com/revam/dotnet-shoko-plugin-forgotten) | Password reset and username recovery |
 | [Filter Helper](https://github.com/revam/dotnet-shoko-plugin-filter-helper) | Lightweight filter endpoints for client-side filtering |
+| [Forgotten](https://github.com/revam/dotnet-shoko-plugin-forgotten) | Password reset and username recovery |
 | [Image Manager](https://github.com/revam/dotnet-shoko-plugin-image-manager) | Upload and manage images for series and episodes |
 | [Offline Importer](https://github.com/revam/dotnet-shoko-plugin-offline-importer) | Import releases based on file names |
 | [Release Importer/Exporter](https://github.com/revam/dotnet-shoko-plugin-release-exporter) | Import/export releases from filesystem |
