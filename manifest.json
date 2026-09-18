@@ -1,42 +1,72 @@
 [
   {
-    "id": "118ffeee-943d-40b2-af63-2416da4beca9",
+    "id": "a92b3752-688a-408f-a03a-bad24718449a",
     "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-forgotten/stable/manifest.json"
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-animeschedule/metadata/manifest.json"
   },
   {
-    "id": "0bb96da1-c996-44a3-9ddb-27961cce0c4d",
+    "id": "3eb9a6dd-eac7-48a9-9b55-ee2c7c23938b",
     "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-image-manager/stable/manifest.json"
-  },
-  {
-    "id": "72a6ff39-2bff-534c-9216-d03cd38e7346",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-offline-importer/stable/manifest.json"
-  },
-  {
-    "id": "031ccc48-94d6-5100-a9e0-e26c49a33319",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-release-exporter/stable/manifest.json"
-  },
-  {
-    "id": "b81acd7e-6641-47e7-a383-0a8b4304408e",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-release-retry/stable/manifest.json"
-  },
-  {
-    "id": "f7e9b467-ef01-5aa6-92ba-3a6079f15bf6",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-relocation-plus/stable/manifest.json"
-  },
-  {
-    "id": "db81e3b3-67de-48d6-acd0-7da499cb30c5",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-upload-file/stable/manifest.json"
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-fanart/metadata/manifest.json"
   },
   {
     "id": "a7f3c291-8b4e-4d6a-9c1d-2e5f7b8a0c3d",
     "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-filter-helper/stable/manifest.json"
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-filter-helper/metadata/manifest.json"
+  },
+  {
+    "id": "118ffeee-943d-40b2-af63-2416da4beca9",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-forgotten/metadata/manifest.json"
+  },
+  {
+    "id": "0bb96da1-c996-44a3-9ddb-27961cce0c4d",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-image-manager/metadata/manifest.json"
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-mcp/metadata/manifest.json"
+  },
+  {
+    "id": "72a6ff39-2bff-534c-9216-d03cd38e7346",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-offline-importer/metadata/manifest.json"
+  },
+  {
+    "id": "031ccc48-94d6-5100-a9e0-e26c49a33319",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-release-exporter/metadata/manifest.json"
+  },
+  {
+    "id": "b81acd7e-6641-47e7-a383-0a8b4304408e",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-release-retry/metadata/manifest.json"
+  },
+  {
+    "id": "f7e9b467-ef01-5aa6-92ba-3a6079f15bf6",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-relocation-plus/metadata/manifest.json"
+  },
+  {
+    "id": "2f4b7a3e-9c1d-4f6a-8b2e-5d3c7a1f9e0b",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-syoboi/metadata/manifest.json"
+  },
+  {
+    "id": "5c09a10b-b36f-4a04-93db-6b085a0aafc2",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-tvmaze/metadata/manifest.json"
+  },
+  {
+    "id": "db81e3b3-67de-48d6-acd0-7da499cb30c5",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-upload-file/metadata/manifest.json"
+  },
+  {
+    "id": "d88779b6-3551-4b07-a05e-595b6e167b13",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-vouch/metadata/manifest.json"
   }
 ]
