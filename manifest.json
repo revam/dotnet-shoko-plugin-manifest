@@ -1,5 +1,10 @@
 [
   {
+    "id": "e73c1e23-111a-4cf0-bab8-054b738c5101",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-anilist/metadata/manifest.json"
+  },
+  {
     "id": "a92b3752-688a-408f-a03a-bad24718449a",
     "type": "manifest",
     "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-animeschedule/metadata/manifest.json"
@@ -53,6 +58,11 @@
     "id": "2f4b7a3e-9c1d-4f6a-8b2e-5d3c7a1f9e0b",
     "type": "manifest",
     "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-syoboi/metadata/manifest.json"
+  },
+  {
+    "id": "12126642-8c32-455f-aca1-e1a2f7b35a8c",
+    "type": "manifest",
+    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-tvdb/metadata/manifest.json"
   },
   {
     "id": "5c09a10b-b36f-4a04-93db-6b085a0aafc2",
