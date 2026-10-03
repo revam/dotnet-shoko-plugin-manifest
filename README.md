@@ -14,9 +14,9 @@ This will automatically include all available plugins:
 
 | Plugin | Description |
 |--------|-------------|
-| [AniList Metadata](https://github.com/revam/dotnet-shoko-plugin-anilist) | Anime metadata, images and cast from AniList |
+| [AniList](https://github.com/revam/dotnet-shoko-plugin-anilist) | Anime metadata, images and cast from AniList |
 | [AnimeSchedule.net](https://github.com/revam/dotnet-shoko-plugin-animeschedule) | Airing schedules, delays and streaming links from AnimeSchedule.net |
-| [Fanart.tv Artwork](https://github.com/revam/dotnet-shoko-plugin-fanart) | Series and movie artwork from Fanart.tv for TMDB and TheTVDB entries |
+| [Fanart.tv Artwork](https://github.com/revam/dotnet-shoko-plugin-fanart) | Series and movie artwork from Fanart.tv for TMDb and TheTVDB entries |
 | [Filter Helper](https://github.com/revam/dotnet-shoko-plugin-filter-helper) | Lightweight filter endpoints for client-side filtering |
 | [Forgotten](https://github.com/revam/dotnet-shoko-plugin-forgotten) | Password reset and username recovery |
 | [Image Manager](https://github.com/revam/dotnet-shoko-plugin-image-manager) | Upload and manage images for series and episodes |
@@ -26,7 +26,7 @@ This will automatically include all available plugins:
 | [Release Retry](https://github.com/revam/dotnet-shoko-plugin-release-retry) | Re-attempt release searches after failure |
 | [Relocation+](https://github.com/revam/dotnet-shoko-plugin-relocation-plus) | Relocate video extra files near video files |
 | [Syoboi Calendar](https://github.com/revam/dotnet-shoko-plugin-syoboi) | Japanese TV and streaming broadcast schedules from cal.syoboi.jp |
-| [TheTVDB Metadata](https://github.com/revam/dotnet-shoko-plugin-tvdb) | Series metadata, images, cast and alternate orderings from TheTVDB |
+| [TvDB](https://github.com/revam/dotnet-shoko-plugin-tvdb) | Series metadata, images, cast and alternate orderings from TheTVDB |
 | [TVmaze Airing Schedule](https://github.com/revam/dotnet-shoko-plugin-tvmaze) | Airing schedules from TVmaze for TMDB-linked shows |
 | [Upload File](https://github.com/revam/dotnet-shoko-plugin-upload-file) | File uploads to named staging areas |
 | [Vouch](https://github.com/revam/dotnet-shoko-plugin-vouch) | Sign in a second device by showing it a short code |
