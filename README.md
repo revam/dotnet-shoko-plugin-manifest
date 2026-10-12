@@ -20,7 +20,6 @@ This will automatically include all available plugins:
 | [Filter Helper](https://github.com/revam/dotnet-shoko-plugin-filter-helper) | Lightweight filter endpoints for client-side filtering |
 | [Forgotten](https://github.com/revam/dotnet-shoko-plugin-forgotten) | Password reset and username recovery |
 | [Image Manager](https://github.com/revam/dotnet-shoko-plugin-image-manager) | Upload and manage images for series and episodes |
-| [MCP Server](https://github.com/revam/dotnet-shoko-plugin-mcp) | Exposes the server as Model Context Protocol tools for AI agents |
 | [Offline Importer](https://github.com/revam/dotnet-shoko-plugin-offline-importer) | Import releases based on file names |
 | [Release Importer/Exporter](https://github.com/revam/dotnet-shoko-plugin-release-exporter) | Import/export releases from filesystem |
 | [Release Retry](https://github.com/revam/dotnet-shoko-plugin-release-retry) | Re-attempt release searches after failure |
