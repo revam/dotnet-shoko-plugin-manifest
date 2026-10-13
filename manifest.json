@@ -1,10 +1,5 @@
 [
   {
-    "id": "e73c1e23-111a-4cf0-bab8-054b738c5101",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-anilist/metadata/manifest.json"
-  },
-  {
     "id": "a92b3752-688a-408f-a03a-bad24718449a",
     "type": "manifest",
     "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-animeschedule/metadata/manifest.json"

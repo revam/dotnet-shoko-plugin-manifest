@@ -14,7 +14,6 @@ This will automatically include all available plugins:
 
 | Plugin | Description |
 |--------|-------------|
-| [AniList](https://github.com/revam/dotnet-shoko-plugin-anilist) | Anime metadata, images and cast from AniList |
 | [AnimeSchedule.net](https://github.com/revam/dotnet-shoko-plugin-animeschedule) | Airing schedules, delays and streaming links from AnimeSchedule.net |
 | [Fanart.tv Artwork](https://github.com/revam/dotnet-shoko-plugin-fanart) | Series and movie artwork from Fanart.tv for TMDb and TheTVDB entries |
 | [Filter Helper](https://github.com/revam/dotnet-shoko-plugin-filter-helper) | Lightweight filter endpoints for client-side filtering |
