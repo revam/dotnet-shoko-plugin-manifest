@@ -1,67 +1,2138 @@
 [
   {
+    "$schema": "https://raw.githubusercontent.com/ShokoAnime/ShokoServer/master/Shoko.BuildTools/manifest.schema.json",
+    "type": "package",
     "id": "a92b3752-688a-408f-a03a-bad24718449a",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-animeschedule/metadata/manifest.json"
+    "name": "AnimeSchedule.net",
+    "overview": "Pulls airing schedules, delays and stream links from AnimeSchedule.net for the anime in your library. Requires your own AnimeSchedule.net application token.",
+    "authors": "revam",
+    "repository_url": "https://github.com/revam/dotnet-shoko-plugin-animeschedule",
+    "tags": [
+      "service-registration",
+      "airing",
+      "schedule",
+      "animeschedule",
+      "calendar",
+      "streaming"
+    ],
+    "releases": [
+      {
+        "version": "1.2.1",
+        "tag": "v1.2.1",
+        "released_at": "2026-10-16T07:17:52.3033479Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.108` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.108`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-animeschedule/releases/download/v1.2.1/AnimeSchedule.net-v1.2.1-any.zip",
+            "checksum": "sha256:a65080b8948a1e22376e17e0d94f46be8d235075d2bcbe4e2089d18dbd4312c6"
+          }
+        ]
+      },
+      {
+        "version": "1.2.0",
+        "tag": "v1.2.0",
+        "released_at": "2026-10-15T09:40:28.8266484Z",
+        "channel": "Stable",
+        "release_notes": "Sweeps now start from AnimeSchedule.net's list of airing anime and only look up anime that can be airing, batched, with growing waits for anime it doesn't know, kept in a database of the plugin's own. A rate limit or a run of server errors pauses the plugin's requests until AnimeSchedule.net is ready again. Its settings are now the plugin's own settings.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.107`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-animeschedule/releases/download/v1.2.0/AnimeSchedule.net-v1.2.0-any.zip",
+            "checksum": "sha256:e2b31ed489e5205aa0d67277ed0a246a6c5ccc3044451d2aafde6a0eeb40ce38"
+          }
+        ]
+      },
+      {
+        "version": "1.1.2",
+        "tag": "v1.1.2",
+        "released_at": "2026-10-13T19:39:51.7732919Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.104` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-animeschedule/releases/download/v1.1.2/AnimeSchedule.net-v1.1.2-any.zip",
+            "checksum": "sha256:853e22df87a2ef344756fd79a7a0b598ecffc87bddbc97797be01fb28cdab239"
+          }
+        ]
+      },
+      {
+        "version": "1.1.1",
+        "tag": "v1.1.1",
+        "released_at": "2026-10-08T02:22:17.4561757Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.100` release, where the interfaces that tie a configuration to its provider moved into `Shoko.Abstractions.Config`. Schedules from AnimeSchedule.net are fetched and written as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.100`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-animeschedule/releases/download/v1.1.1/AnimeSchedule.net-v1.1.1-any.zip",
+            "checksum": "sha256:85f5801ec7d5c0f275e439d0a663ebd95ea65e4f4e0784bbb4da8e95b4fe2795"
+          }
+        ]
+      },
+      {
+        "version": "1.1.0",
+        "tag": "v1.1.0",
+        "released_at": "2026-10-06T21:28:12.5479414Z",
+        "channel": "Stable",
+        "release_notes": "Airings are now stored by their episode number, so the server links them to the episode itself, including episodes it doesn't list yet. Hulu is registered in the US; every other platform is global.\n\nRebuilt against the abstractions `6.0.0-alpha.99` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.99`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-animeschedule/releases/download/v1.1.0/AnimeSchedule.net-v1.1.0-any.zip",
+            "checksum": "sha256:bfff56c924aff4f3c97113a31cf30c6e27d9346d6b1688f171b5813f4140f9a2"
+          }
+        ]
+      },
+      {
+        "version": "1.0.2",
+        "tag": "v1.0.2",
+        "released_at": "2026-10-03T16:54:40.6110889Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.98` release. Schedules from AnimeSchedule.net are fetched and written as before. The plugin also has its own icon and thumbnail now.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.98`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-animeschedule/releases/download/v1.0.2/AnimeSchedule.net-v1.0.2-any.zip",
+            "checksum": "sha256:062d387e74984a5090ff4e622b817306edb9356bb23b1453f58ac6d456670269"
+          }
+        ]
+      },
+      {
+        "version": "1.0.1",
+        "tag": "v1.0.1",
+        "released_at": "2026-09-30T16:38:10.9884148Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the metadata redesign in the abstractions `6.0.0-alpha.95` release. Series and episodes now carry a `MetadataGuid` as their ID, so the plugin reads the AniDB anime ID from it and links the airings it writes to episodes by that ID. Schedules from AnimeSchedule.net are fetched and written as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.95`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-animeschedule/releases/download/v1.0.1/AnimeSchedule.net-v1.0.1-any.zip",
+            "checksum": "sha256:b4e08ab2bf78697275808339956474eace12a1fea41d37cde9946f282ed4baad"
+          }
+        ]
+      },
+      {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "released_at": "2026-09-18T04:19:07.3980862Z",
+        "channel": "Stable",
+        "release_notes": "First release.\n\nPulls airing schedules, delays and streaming links from [AnimeSchedule.net](https://animeschedule.net) as an airing schedule provider. Delays are taken as AnimeSchedule.net reports them rather than inferred, and an entry delayed with no new date becomes a slotless airing.\n\nRequires your own AnimeSchedule.net application token, and Shoko Server with abstractions `6.0.0-alpha.89`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-animeschedule/releases/download/v1.0.0/AnimeSchedule.net-v1.0.0-any.zip",
+            "checksum": "sha256:2c21a8d782489cf827b160e621f5bfe079a5549683d02b65fe38e600dbcaf4f0"
+          }
+        ]
+      }
+    ],
+    "thumbnail_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-animeschedule/stable/source/Assets/thumbnail.svg",
+    "icon_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-animeschedule/stable/source/Assets/icon.svg"
   },
   {
+    "$schema": "https://raw.githubusercontent.com/ShokoAnime/ShokoServer/master/Shoko.BuildTools/manifest.schema.json",
+    "type": "package",
     "id": "3eb9a6dd-eac7-48a9-9b55-ee2c7c23938b",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-fanart/metadata/manifest.json"
+    "name": "fanart.tv",
+    "overview": "Adds series and movie artwork from Fanart.tv to TMDB-linked entries, keyed through the TheTVDB ID for shows and the TMDB ID for movies.",
+    "authors": "revam",
+    "repository_url": "https://github.com/revam/dotnet-shoko-plugin-fanart",
+    "tags": [
+      "application-registration",
+      "service-registration",
+      "artwork",
+      "images",
+      "fanart",
+      "fanart.tv",
+      "tmdb"
+    ],
+    "releases": [
+      {
+        "version": "1.3.1",
+        "tag": "v1.3.1",
+        "released_at": "2026-10-16T07:18:00.2044001Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.108` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.108`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-fanart/releases/download/v1.3.1/fanart.tv-v1.3.1-any.zip",
+            "checksum": "sha256:24136c5f76b6dd62e19851222f0e0b7b6c7ef6b6bdc9e86943a40f446dcafe9b"
+          }
+        ]
+      },
+      {
+        "version": "1.3.0",
+        "tag": "v1.3.0",
+        "released_at": "2026-10-15T09:39:29.655143Z",
+        "channel": "Stable",
+        "release_notes": "Its settings are now the plugin's own settings, so a client can open them from the plugin. Otherwise behaves as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.107`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-fanart/releases/download/v1.3.0/fanart.tv-v1.3.0-any.zip",
+            "checksum": "sha256:08a9250730f3622b3d5364bcd3a4dfe33d818f0cee38a77c0bae4752672d9d39"
+          }
+        ]
+      },
+      {
+        "version": "1.2.1",
+        "tag": "v1.2.1",
+        "released_at": "2026-10-13T19:40:06.2281983Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.104` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-fanart/releases/download/v1.2.1/Fanart.tvArtwork-v1.2.1-any.zip",
+            "checksum": "sha256:1c830460060ff837ecd9c13ef25737693d157f32380180293739f8a2565584b3"
+          }
+        ]
+      },
+      {
+        "version": "1.2.0",
+        "tag": "v1.2.0",
+        "released_at": "2026-10-06T21:29:39.5629798Z",
+        "channel": "Stable",
+        "release_notes": "The plugin and its source are now called fanart.tv, as the site writes it.\n\nRebuilt against the abstractions `6.0.0-alpha.99` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.99`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-fanart/releases/download/v1.2.0/Fanart.tvArtwork-v1.2.0-any.zip",
+            "checksum": "sha256:e4474f128fc671b265141e1ad42098c599936c5ea6fb918d58ea5e8f03ca2956"
+          }
+        ]
+      },
+      {
+        "version": "1.1.1",
+        "tag": "v1.1.1",
+        "released_at": "2026-10-03T16:54:52.3091696Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.98` release, where TMDb data comes from the bundled TMDb plugin instead of the core. Artwork for TMDb shows and movies is found as before, with a show's TheTVDB ID now read from its cross-source IDs. The plugin also has its own icon and thumbnail now.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.98`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-fanart/releases/download/v1.1.1/Fanart.tvArtwork-v1.1.1-any.zip",
+            "checksum": "sha256:707e79428950136bd11c819ba9fe1ec6c544d9b1e64a6adb5b794137b7278b87"
+          }
+        ]
+      },
+      {
+        "version": "1.1.0",
+        "tag": "v1.1.0",
+        "released_at": "2026-09-30T16:38:04.7104329Z",
+        "channel": "Stable",
+        "release_notes": "Fanart.tv artwork now comes in through Shoko's image contributor system instead of the plugin's own weekly sweep. Whenever Shoko refreshes the images of a TMDB show or movie, it asks the plugin for that entry's artwork, and with the TheTVDB plugin installed it does the same for TheTVDB series, which are looked up by their own TheTVDB ID. Which of these the plugin adds artwork to can be switched per source and kind under the server's image contributor settings, and how many images of each type are downloaded is now set in the server's image settings for the Fanart.tv source. The sweep interval, movie, image count, download and withdrawn artwork settings are gone, and so is the collection-wide sweep action; the per-series \"Refresh Fanart.tv Artwork\" action is still there, open to every user, and refreshes the artwork of each linked show, series and movie. Artwork and links are kept under the `fanart-tv` source.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.95`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-fanart/releases/download/v1.1.0/Fanart.tvArtwork-v1.1.0-any.zip",
+            "checksum": "sha256:e74f1f292c53e5ae4b4284c7745ee1376b7f6e88f0b99af964fa56ce167c01ec"
+          }
+        ]
+      },
+      {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "released_at": "2026-09-18T15:56:05.9573935Z",
+        "channel": "Stable",
+        "release_notes": "First release. Adds series and movie artwork from Fanart.tv to the TMDB entries in your collection, through Shoko's image manager: transparent logos, banners, high resolution backgrounds and disc art, the kinds Shoko has no other source for.\n\n**Series and movie artwork only**, deliberately. Fanart.tv numbers season artwork by TheTVDB seasons and Shoko's seasons come from TMDB; the two agree often enough to be tempting and disagree often enough to be wrong, so season artwork is recognised and dropped rather than attached to the wrong season.\n\nShows are looked up as `TMDB show -> TvdbShowID -> v3.2/tv`, which needs no Trakt, no TheTVDB key and no community mapping list. A show with no TheTVDB ID has no lookup path and is counted in the sweep's log rather than guessed at from its title, because wrong artwork is worse than none. Movies go straight through their TMDB id.\n\nArtwork attaches to the TMDB show or movie rather than to the Shoko series in front of it, so it follows the entry it belongs to.\n\n**You need a Fanart.tv key.** Official builds ship a project key, and you can add your own personal key alongside it in the settings, which shortens the delay on newly uploaded artwork from seven days to two. A build you compile yourself has no project key and asks for one.\n\nThe sweep runs weekly by default, matching the seven day delay before new uploads reach a project key, and only walks the TMDB entries already in your collection.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.89`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-fanart/releases/download/v1.0.0/Fanart.tvArtwork-v1.0.0-any.zip",
+            "checksum": "sha256:490eca98bc5deb9123801ca866c6d72e65394e5b9f67e483c491104cae351b9c"
+          }
+        ]
+      }
+    ],
+    "thumbnail_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-fanart/stable/source/Assets/thumbnail.svg",
+    "icon_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-fanart/stable/source/Assets/icon.svg"
   },
   {
     "id": "a7f3c291-8b4e-4d6a-9c1d-2e5f7b8a0c3d",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-filter-helper/metadata/manifest.json"
+    "name": "Filter Helper",
+    "overview": "Lightweight filter endpoints for client-side filtering.",
+    "authors": "revam",
+    "repository_url": "https://github.com/revam/dotnet-shoko-plugin-filter-helper",
+    "tags": [
+      "service-registration",
+      "filter",
+      "api",
+      "groups",
+      "series"
+    ],
+    "releases": [
+      {
+        "version": "1.0.8",
+        "tag": "v1.0.8",
+        "released_at": "2026-10-16T07:17:59.322612Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.108` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.108`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-filter-helper/releases/download/v1.0.8/FilterHelper-v1.0.8-any.zip",
+            "checksum": "sha256:cd7cf6e7d4f7271829934595e0b46f866139fbbe7e3f375802c284fb50cd2eb2"
+          }
+        ]
+      },
+      {
+        "version": "1.0.7",
+        "tag": "v1.0.7",
+        "released_at": "2026-10-15T09:39:31.5311421Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.107` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.107`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-filter-helper/releases/download/v1.0.7/FilterHelper-v1.0.7-any.zip",
+            "checksum": "sha256:6b42afe7d7928b1814ad55efb13f9c35a51de404da02c4dc9968db0047e42dc2"
+          }
+        ]
+      },
+      {
+        "version": "1.0.6",
+        "tag": "v1.0.6",
+        "released_at": "2026-10-13T23:50:50.8883575Z",
+        "channel": "Stable",
+        "release_notes": "Added a thumbnail and an icon for the plugin. Nothing else changed.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-filter-helper/releases/download/v1.0.6/FilterHelper-v1.0.6-any.zip",
+            "checksum": "sha256:ad7ce65fc404b2234b3182a5294b964f44a43fa12d8534d0e8014296bd9400a5"
+          }
+        ]
+      },
+      {
+        "version": "1.0.5",
+        "tag": "v1.0.5",
+        "released_at": "2026-10-13T19:40:21.4686224Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.104` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-filter-helper/releases/download/v1.0.5/FilterHelper-v1.0.5-any.zip",
+            "checksum": "sha256:1b0047a81d6b3a4be8cc76ff60d6828c349a18754c2b468c51b7f5f498c411cc"
+          }
+        ]
+      },
+      {
+        "version": "1.0.4",
+        "tag": "v1.0.4",
+        "released_at": "2026-10-06T21:39:43.3019006Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.99` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.99`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-filter-helper/releases/download/v1.0.4/FilterHelper-v1.0.4-any.zip",
+            "checksum": "sha256:57735f59ed9f283bc523a1a9be3f69d047334336cf4b65f12188a1b5f1a03a1f"
+          }
+        ]
+      },
+      {
+        "version": "1.0.3",
+        "tag": "v1.0.3",
+        "released_at": "2026-10-03T16:53:16.9158894Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.98` release. The filter endpoints answer as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.98`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-filter-helper/releases/download/v1.0.3/FilterHelper-v1.0.3-any.zip",
+            "checksum": "sha256:6b4b13fdb40bd01de54c1e8d833e7f44af92d1db316fde18a33e4a9efe96deac"
+          }
+        ]
+      },
+      {
+        "version": "1.0.2",
+        "tag": "v1.0.2",
+        "released_at": "2026-09-30T16:38:13.4811359Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.95` release. Groups now carry a `MetadataGuid` as their ID, and the filter endpoints keep answering with the numeric group ID in `GroupID`, as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.95`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-filter-helper/releases/download/v1.0.2/FilterHelper-v1.0.2-any.zip",
+            "checksum": "sha256:9d6dab614ce56a0ffab3d15ab8dd614daf7f9ff07f4623ce6c427d8bb1f28395"
+          }
+        ]
+      },
+      {
+        "version": "1.0.1",
+        "tag": "v1.0.1",
+        "released_at": "2026-09-18T04:41:01.6505854Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the current abstractions, and moved release packaging onto `shoko-build` with the published manifest on the `metadata` branch.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.89`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-filter-helper/releases/download/v1.0.1/FilterHelper-v1.0.1-any.zip",
+            "checksum": "sha256:ddaeeab86e298ba1748bfa2a12dfe29a82f2f96a68ab6ba46646b11808099b54"
+          }
+        ]
+      },
+      {
+        "version": "0.1.0",
+        "tag": "v0.1.0",
+        "source_revision": "2ceace37c72786bba76b488bf90d216ec6020e80",
+        "released_at": "2026-07-17T23:16:33Z",
+        "channel": "Stable",
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-filter-helper/releases/download/v0.1.0/Shoko.Plugin.FilterHelper-v0.1.0-any.zip",
+            "checksum": "0a6457c7768d176d1607e1b3b5dc56d852c0c595412f540b253d3138763aa446"
+          }
+        ]
+      }
+    ],
+    "thumbnail_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-filter-helper/stable/source/Assets/thumbnail.svg",
+    "icon_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-filter-helper/stable/source/Assets/icon.svg"
   },
   {
     "id": "118ffeee-943d-40b2-af63-2416da4beca9",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-forgotten/metadata/manifest.json"
+    "name": "Forgotten",
+    "overview": "Password reset and username recovery for Shoko. Provides a 4-step forgot-password flow and a forgot-username sub-flow.",
+    "authors": "revam",
+    "repository_url": "https://github.com/revam/dotnet-shoko-plugin-forgotten",
+    "tags": [
+      "service-registration",
+      "password-reset",
+      "account-recovery",
+      "hosted-service",
+      "api"
+    ],
+    "releases": [
+      {
+        "version": "1.1.1",
+        "tag": "v1.1.1",
+        "released_at": "2026-10-16T07:18:13.1945487Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.108` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.108`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-forgotten/releases/download/v1.1.1/Forgotten-v1.1.1-any.zip",
+            "checksum": "sha256:99e0fa219f9b6bc9a292b2380a043dd5a2ab6366a365a153b9a3cd0202befa14"
+          }
+        ]
+      },
+      {
+        "version": "1.1.0",
+        "tag": "v1.1.0",
+        "released_at": "2026-10-15T09:39:43.9244438Z",
+        "channel": "Stable",
+        "release_notes": "Its settings are now the plugin's own settings, so a client can open them from the plugin. Otherwise behaves as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.107`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-forgotten/releases/download/v1.1.0/Forgotten-v1.1.0-any.zip",
+            "checksum": "sha256:28c822ccab16557eab464f94bf2e539fede48f2633c4cd0dcc48e4ee6990a3e4"
+          }
+        ]
+      },
+      {
+        "version": "1.0.9",
+        "tag": "v1.0.9",
+        "released_at": "2026-10-13T23:51:03.2728176Z",
+        "channel": "Stable",
+        "release_notes": "Added a thumbnail and an icon for the plugin. Nothing else changed.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-forgotten/releases/download/v1.0.9/Forgotten-v1.0.9-any.zip",
+            "checksum": "sha256:33abd09583b4291716b8144b179e6a0b2c84cc1427d6da9cddb2bf823cc2705b"
+          }
+        ]
+      },
+      {
+        "version": "1.0.8",
+        "tag": "v1.0.8",
+        "released_at": "2026-10-13T19:40:36.4738746Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.104` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-forgotten/releases/download/v1.0.8/Forgotten-v1.0.8-any.zip",
+            "checksum": "sha256:96c857d59217c3e0053b403caa152bdb4ec9c9a9de02ad8a06815163aeba7d16"
+          }
+        ]
+      },
+      {
+        "version": "1.0.7",
+        "tag": "v1.0.7",
+        "released_at": "2026-10-06T21:39:45.2012232Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.99` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.99`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-forgotten/releases/download/v1.0.7/Forgotten-v1.0.7-any.zip",
+            "checksum": "sha256:f3c3fd577aca22f20b3eea7c3e722882e7a029b92e0a37a8ca6a46e6f060ab3b"
+          }
+        ]
+      },
+      {
+        "version": "1.0.6",
+        "tag": "v1.0.6",
+        "released_at": "2026-10-03T16:53:57.8806275Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.98` release. Password resets and username recovery work as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.98`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-forgotten/releases/download/v1.0.6/Forgotten-v1.0.6-any.zip",
+            "checksum": "sha256:c4a0f01f324919f5829dea377e04d2eaae8b9f8c62e2f2014fc643ae2e73327e"
+          }
+        ]
+      },
+      {
+        "version": "1.0.5",
+        "tag": "v1.0.5",
+        "released_at": "2026-09-30T16:38:17.9436075Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.95` release. Password resets and username recovery work as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.95`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-forgotten/releases/download/v1.0.5/Forgotten-v1.0.5-any.zip",
+            "checksum": "sha256:8a0129f0d67d85497b201edeadb955c55a801aac833606e46a2fe5b0d11c13d1"
+          }
+        ]
+      },
+      {
+        "version": "1.0.4",
+        "tag": "v1.0.4",
+        "released_at": "2026-09-18T04:46:22.7142489Z",
+        "channel": "Stable",
+        "release_notes": "Failed reset-code attempts now count towards Shoko's shared authentication lockout, so a client guessing codes is locked out server-wide rather than only here, and a lockout earned at sign-in blocks a reset request too.\n\nOnly a genuinely unknown code is charged: a malformed one, or a correct one the host then refused to act on, costs nothing. A completed reset clears both the client and the account lockout, so somebody who was locked out for forgetting their password can sign in with the new one.\n\nAlso rebuilt against the current abstractions and moved release packaging onto `shoko-build`.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.89`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-forgotten/releases/download/v1.0.4/Forgotten-v1.0.4-any.zip",
+            "checksum": "sha256:01422decee85d40edb9d211bf28218d113197e6eea4a5d8110035705f230be6f"
+          }
+        ]
+      },
+      {
+        "version": "1.0.3",
+        "tag": "v1.0.3",
+        "source_revision": "b4ea011f827191f41c4aa8abbcc33374bc2ae8af",
+        "released_at": "2026-05-07T18:13:10Z",
+        "channel": "Stable",
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-forgotten/releases/download/v1.0.3/Shoko.Plugin.Forgotten-v1.0.3-any.zip",
+            "checksum": "b231182322ab08c02e1770cda1c17b33dbe9cb925dad304a56090723eea1cf2f"
+          }
+        ]
+      },
+      {
+        "version": "1.0.2",
+        "tag": "v1.0.2",
+        "source_revision": "fb00269f7bf72ca9f7a0d6acf2f0e33e6dd08513",
+        "released_at": "2026-05-07T15:50:26Z",
+        "channel": "Stable",
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-forgotten/releases/download/v1.0.2/Shoko.Plugin.Forgotten-v1.0.2-any.zip",
+            "checksum": "4ea3aaf9a36a74abbf2664b3eb326806b3ddceb09396fb68742196808e2e0fa5"
+          }
+        ]
+      },
+      {
+        "version": "1.0.1",
+        "tag": "v1.0.1",
+        "source_revision": "a842a0d00a78d92f0600513a10085e7fdc27efaa",
+        "released_at": "2026-05-07T15:42:57Z",
+        "channel": "Stable",
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-forgotten/releases/download/v1.0.1/Shoko.Plugin.Forgotten-v1.0.1-any.zip",
+            "checksum": "da37db0f065fd45c97dd6cf2f3bb33ae2ea5400b3528fb585bbd65a345b8c856"
+          }
+        ]
+      },
+      {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "source_revision": "32472b7563b465e2143b34e06938d11ce30a443b",
+        "released_at": "2026-05-07T15:17:20Z",
+        "channel": "Stable",
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-forgotten/releases/download/v1.0.0/Shoko.Plugin.Forgotten-v1.0.0-any.zip",
+            "checksum": "087b6a8184ec65592c29c593fd19ac4686271b9432161f9993da55d501f50e03"
+          }
+        ]
+      }
+    ],
+    "thumbnail_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-forgotten/stable/source/Assets/thumbnail.svg",
+    "icon_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-forgotten/stable/source/Assets/icon.svg"
   },
   {
     "id": "0bb96da1-c996-44a3-9ddb-27961cce0c4d",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-image-manager/metadata/manifest.json"
+    "name": "Image Manager",
+    "overview": "Upload and manage user-submitted images for Shoko series and episodes. Browse, upload, set as preferred, enable/disable, and delete images through an intuitive dashboard UI.",
+    "authors": "revam",
+    "repository_url": "https://github.com/revam/dotnet-shoko-plugin-image-manager",
+    "tags": [
+      "resource-resolver",
+      "service-registration",
+      "image-management",
+      "image-upload",
+      "series",
+      "episode"
+    ],
+    "releases": [
+      {
+        "version": "1.1.6",
+        "tag": "v1.1.6",
+        "released_at": "2026-10-16T07:18:11.1613895Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.108` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.108`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-image-manager/releases/download/v1.1.6/ImageManager-v1.1.6-any.zip",
+            "checksum": "sha256:539877efdaca86033e02bc23fc14db541e7d18883d70bd997e58976387d04c68"
+          }
+        ]
+      },
+      {
+        "version": "1.1.5",
+        "tag": "v1.1.5",
+        "released_at": "2026-10-15T09:39:41.9582244Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.107` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.107`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-image-manager/releases/download/v1.1.5/ImageManager-v1.1.5-any.zip",
+            "checksum": "sha256:3240a5c9e97ee1b6110905ada7468c8a020d8918fa04131025fd4549888cdf64"
+          }
+        ]
+      },
+      {
+        "version": "1.1.4",
+        "tag": "v1.1.4",
+        "released_at": "2026-10-13T23:50:46.8433598Z",
+        "channel": "Stable",
+        "release_notes": "Added a thumbnail and an icon for the plugin. Nothing else changed.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-image-manager/releases/download/v1.1.4/ImageManager-v1.1.4-any.zip",
+            "checksum": "sha256:059d7a32e561476a67e4d41654bd338823753c4c54d388e5065c19b8114fef1a"
+          }
+        ]
+      },
+      {
+        "version": "1.1.3",
+        "tag": "v1.1.3",
+        "released_at": "2026-10-13T19:40:17.6610736Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.104` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-image-manager/releases/download/v1.1.3/ImageManager-v1.1.3-any.zip",
+            "checksum": "sha256:222a1e00e17f1da3d6799627075714f7bd8bbea1322f4ea1cbbfd46a0761a3b5"
+          }
+        ]
+      },
+      {
+        "version": "1.1.2",
+        "tag": "v1.1.2",
+        "released_at": "2026-10-06T21:39:39.130272Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.99` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.99`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-image-manager/releases/download/v1.1.2/ImageManager-v1.1.2-any.zip",
+            "checksum": "sha256:55b649bdf5b572ccaa22dc7ef1eecab31b30dfbf099325e14d4dea5ecf543c5a"
+          }
+        ]
+      },
+      {
+        "version": "1.1.1",
+        "tag": "v1.1.1",
+        "released_at": "2026-10-03T16:54:00.9988897Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.98` release. The dashboard works as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.98`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-image-manager/releases/download/v1.1.1/ImageManager-v1.1.1-any.zip",
+            "checksum": "sha256:ea1898fdd45ed3d7c6c1bd3414375ecd37a41f696e5676fc9ef87e40bfd22e25"
+          }
+        ]
+      },
+      {
+        "version": "1.1.0",
+        "tag": "v1.1.0",
+        "released_at": "2026-09-30T16:38:26.1855829Z",
+        "channel": "Stable",
+        "release_notes": "The dashboard now works against the abstractions `6.0.0-alpha.95` release and talks to Shoko's APIv3 image routes directly. Setting a preferred image, uploading (optionally as preferred), and enabling or disabling an image all go through APIv3, and the plugin's own upload, toggle and unset-preferred endpoints under `/api/plugin/ImageManager` are gone. Enabling or disabling an image now changes every link the series or episode sees it through, so an image disabled on one series can be enabled there again, and its state is read from those links rather than from the image as a whole. Disabled episode images are listed so they can be enabled again, an image the server holds no copy of is shown from its remote URL, and the script error the dashboard threw on every click is fixed.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.95`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-image-manager/releases/download/v1.1.0/ImageManager-v1.1.0-any.zip",
+            "checksum": "sha256:02cd77897ad52b9500d9149a8c76f7f0c8040f339cab1d1a2e48a1ac278a6585"
+          }
+        ]
+      },
+      {
+        "version": "1.0.1",
+        "tag": "v1.0.1",
+        "released_at": "2026-09-18T04:41:08.9541809Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the current abstractions, and moved release packaging onto `shoko-build` with the published manifest on the `metadata` branch.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.89`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-image-manager/releases/download/v1.0.1/ImageManager-v1.0.1-any.zip",
+            "checksum": "sha256:71cec66ce068ad5cbace6524cc9afbfd347f5f14555713e0c539b4a920b8604a"
+          }
+        ]
+      },
+      {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "source_revision": "872806edf14e3013fb60a71416d15a1d808bb444",
+        "released_at": "2026-07-17T05:34:44Z",
+        "channel": "Stable",
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-image-manager/releases/download/v1.0.0/Shoko.Plugin.ImageManager-v1.0.0-any.zip",
+            "checksum": "8e79e5cab799810b60d5f173f3b1a37b19de0440c165b036155765bb8588a5fb"
+          }
+        ]
+      }
+    ],
+    "thumbnail_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-image-manager/stable/source/Assets/thumbnail.svg",
+    "icon_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-image-manager/stable/source/Assets/icon.svg"
   },
   {
     "id": "031ccc48-94d6-5100-a9e0-e26c49a33319",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-release-exporter/metadata/manifest.json"
+    "name": "Release Importer/Exporter",
+    "overview": "Responsible for importing releases to and exporting releases from the file system near the video files.",
+    "authors": "revam",
+    "repository_url": "https://github.com/revam/dotnet-shoko-plugin-release-exporter",
+    "tags": [
+      "service-registration",
+      "release-provider",
+      "hosted-service",
+      "release-import",
+      "release-export",
+      "filesystem"
+    ],
+    "releases": [
+      {
+        "version": "1.1.1",
+        "tag": "v1.1.1",
+        "released_at": "2026-10-16T07:18:09.9700808Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.108` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.108`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-exporter/releases/download/v1.1.1/ReleaseExporter-v1.1.1-any.zip",
+            "checksum": "sha256:842e8964a8bf31a97639a2250785473b8f7a9b5488fc9f3223bb81d1e75003ec"
+          }
+        ]
+      },
+      {
+        "version": "1.1.0",
+        "tag": "v1.1.0",
+        "released_at": "2026-10-15T09:39:48.2620585Z",
+        "channel": "Stable",
+        "release_notes": "Its settings are now the plugin's own settings, so a client can open them from the plugin. Otherwise behaves as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.107`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-exporter/releases/download/v1.1.0/ReleaseExporter-v1.1.0-any.zip",
+            "checksum": "sha256:16020491728633d9adf36c59bc3cbad137afcfdcdc39977b233fe8e444312b53"
+          }
+        ]
+      },
+      {
+        "version": "1.0.6",
+        "tag": "v1.0.6",
+        "released_at": "2026-10-13T23:51:02.3359858Z",
+        "channel": "Stable",
+        "release_notes": "Added a thumbnail and an icon for the plugin. Nothing else changed.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-exporter/releases/download/v1.0.6/ReleaseExporter-v1.0.6-any.zip",
+            "checksum": "sha256:8a18c271f5ff772b6fed87224b5105b33ada4aee02d7827c5f84d2daa507d3c2"
+          }
+        ]
+      },
+      {
+        "version": "1.0.5",
+        "tag": "v1.0.5",
+        "released_at": "2026-10-13T19:40:32.0903974Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.104` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-exporter/releases/download/v1.0.5/ReleaseExporter-v1.0.5-any.zip",
+            "checksum": "sha256:5e04d8a3f1f6c358998834a239cee8c0aa79c158e23343b2ac307ac2be394a4c"
+          }
+        ]
+      },
+      {
+        "version": "1.0.4",
+        "tag": "v1.0.4",
+        "released_at": "2026-10-06T21:39:43.8771973Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.99` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.99`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-exporter/releases/download/v1.0.4/ReleaseExporter-v1.0.4-any.zip",
+            "checksum": "sha256:c8ce0c3e3511cdfca1390905f4857f23ba6d605f99aa7149a00e12b42a0595f4"
+          }
+        ]
+      },
+      {
+        "version": "1.0.3",
+        "tag": "v1.0.3",
+        "released_at": "2026-10-03T16:54:04.2062444Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.98` release. Release files are exported and imported as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.98`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-exporter/releases/download/v1.0.3/ReleaseExporter-v1.0.3-any.zip",
+            "checksum": "sha256:fd52d25e616c265d6d3305a2226001be1696d00a11f1fed610aee45d06eb08dc"
+          }
+        ]
+      },
+      {
+        "version": "1.0.2",
+        "tag": "v1.0.2",
+        "released_at": "2026-09-30T16:38:18.857572Z",
+        "channel": "Stable",
+        "release_notes": "Importing release files now works: every import failed and was logged as an error. Files exported by older versions, which keep the AniDB IDs directly on each cross-reference, are read as well, and a file with no usable cross-reference is skipped so the next release provider gets the video. Rebuilt against the abstractions `6.0.0-alpha.95` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.95`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-exporter/releases/download/v1.0.2/ReleaseExporter-v1.0.2-any.zip",
+            "checksum": "sha256:329f7eabe8c64800837ab0e4876f11f532de32f180ca7938d712a076fe527f6d"
+          }
+        ]
+      },
+      {
+        "version": "1.0.1",
+        "tag": "v1.0.1",
+        "released_at": "2026-09-18T04:41:20.4464876Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the current abstractions, and moved release packaging onto `shoko-build` with the published manifest on the `metadata` branch.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.89`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-exporter/releases/download/v1.0.1/ReleaseExporter-v1.0.1-any.zip",
+            "checksum": "sha256:b333bccc3c7e9abd2e1c12ffcdae0cb8042068bb2c592f33181926fed0896114"
+          }
+        ]
+      },
+      {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "source_revision": "569d3a79985963b09281cbaf99431732a616a0d3",
+        "released_at": "2026-04-28T18:02:31Z",
+        "channel": "Stable",
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-exporter/releases/download/v1.0.0/Shoko.Plugin.ReleaseExporter-v1.0.0-any.zip",
+            "checksum": "7839403540f6e039594dce8ac378da888909cee5b640a8d5cf0bccc416973773"
+          }
+        ]
+      }
+    ],
+    "thumbnail_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-release-exporter/stable/source/Assets/thumbnail.svg",
+    "icon_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-release-exporter/stable/source/Assets/icon.svg"
   },
   {
     "id": "b81acd7e-6641-47e7-a383-0a8b4304408e",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-release-retry/metadata/manifest.json"
+    "name": "Release Retry",
+    "overview": "Re-attempts release searches after a configurable delay if the first auto-match attempt fails.",
+    "authors": "revam",
+    "repository_url": "https://github.com/revam/dotnet-shoko-plugin-release-retry",
+    "tags": [
+      "hosted-service",
+      "service-registration",
+      "release",
+      "retry",
+      "search",
+      "auto-match"
+    ],
+    "releases": [
+      {
+        "version": "1.1.1",
+        "tag": "v1.1.1",
+        "released_at": "2026-10-16T07:18:18.3027926Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.108` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.108`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-retry/releases/download/v1.1.1/ReleaseRetry-v1.1.1-any.zip",
+            "checksum": "sha256:62c836b0475ca406a7523fad2c57faece3ea8703fb3c1f7d41c1e0b5e47c2eba"
+          }
+        ]
+      },
+      {
+        "version": "1.1.0",
+        "tag": "v1.1.0",
+        "released_at": "2026-10-15T09:39:49.5787262Z",
+        "channel": "Stable",
+        "release_notes": "Its settings are now the plugin's own settings, so a client can open them from the plugin. Otherwise behaves as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.107`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-retry/releases/download/v1.1.0/ReleaseRetry-v1.1.0-any.zip",
+            "checksum": "sha256:70493e9e91a2035dc6a69afe0db43629a1df1c60a31746fc33f22934a5e8b06b"
+          }
+        ]
+      },
+      {
+        "version": "1.0.6",
+        "tag": "v1.0.6",
+        "released_at": "2026-10-13T23:51:12.8383345Z",
+        "channel": "Stable",
+        "release_notes": "Added a thumbnail and an icon for the plugin. Nothing else changed.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-retry/releases/download/v1.0.6/ReleaseRetry-v1.0.6-any.zip",
+            "checksum": "sha256:8d7169058e3018f5a23a05154f2b097c8f2c40cf59868b1c0e0ee95db1a43db7"
+          }
+        ]
+      },
+      {
+        "version": "1.0.5",
+        "tag": "v1.0.5",
+        "released_at": "2026-10-13T19:40:39.8999279Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.104` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-retry/releases/download/v1.0.5/ReleaseRetry-v1.0.5-any.zip",
+            "checksum": "sha256:13281a25c24e3ecdd8bd7f7a74032f81b0ad73abb802866515f17019a47baac5"
+          }
+        ]
+      },
+      {
+        "version": "1.0.4",
+        "tag": "v1.0.4",
+        "released_at": "2026-10-06T21:39:57.0318807Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.99` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.99`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-retry/releases/download/v1.0.4/ReleaseRetry-v1.0.4-any.zip",
+            "checksum": "sha256:7c834a610f8bab5399d67fae56009f92ea412ae62a57c9beb04347ec8b8c6f53"
+          }
+        ]
+      },
+      {
+        "version": "1.0.3",
+        "tag": "v1.0.3",
+        "released_at": "2026-10-03T16:54:11.0914107Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.98` release. Failed auto-matches are retried as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.98`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-retry/releases/download/v1.0.3/ReleaseRetry-v1.0.3-any.zip",
+            "checksum": "sha256:9fc4ca6be40cce4a6317248454b24aa7f617dcc9bd0c589c4716be25cb914f7c"
+          }
+        ]
+      },
+      {
+        "version": "1.0.2",
+        "tag": "v1.0.2",
+        "released_at": "2026-09-30T16:38:08.5764181Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.95` release. Failed auto-matches are retried as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.95`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-retry/releases/download/v1.0.2/ReleaseRetry-v1.0.2-any.zip",
+            "checksum": "sha256:b252178e9daddc1b6935de54f714d4c2c5f702c77aa8d83588341385b9f7688e"
+          }
+        ]
+      },
+      {
+        "version": "1.0.1",
+        "tag": "v1.0.1",
+        "released_at": "2026-09-18T04:41:28.8045714Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the current abstractions, and moved release packaging onto `shoko-build` with the published manifest on the `metadata` branch.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.89`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-retry/releases/download/v1.0.1/ReleaseRetry-v1.0.1-any.zip",
+            "checksum": "sha256:1d18fe33f5cef4fdb32f37c609e9b899428d4df9c09e9797c83f70623acb8e51"
+          }
+        ]
+      },
+      {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "source_revision": "40d7a65de4f8a4973d29c0e3cee4017f3417e882",
+        "released_at": "2026-04-28T17:02:39Z",
+        "channel": "Stable",
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-release-retry/releases/download/v1.0.0/Shoko.Plugin.ReleaseRetry-v1.0.0-any.zip",
+            "checksum": "e846cccf749c7b3022e5c918e2ed2ed2fad4bd49d2c39bc7ffef52a6fed68ea1"
+          }
+        ]
+      }
+    ],
+    "thumbnail_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-release-retry/stable/source/Assets/thumbnail.svg",
+    "icon_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-release-retry/stable/source/Assets/icon.svg"
   },
   {
     "id": "f7e9b467-ef01-5aa6-92ba-3a6079f15bf6",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-relocation-plus/metadata/manifest.json"
+    "name": "Relocation+",
+    "overview": "Responsible for relocating video extra files near the video files.",
+    "authors": "revam",
+    "repository_url": "https://github.com/revam/dotnet-shoko-plugin-relocation-plus",
+    "tags": [
+      "service-registration",
+      "hosted-service",
+      "relocation",
+      "video-extras",
+      "filesystem"
+    ],
+    "releases": [
+      {
+        "version": "1.0.8",
+        "tag": "v1.0.8",
+        "released_at": "2026-10-16T07:18:24.8080398Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.108` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.108`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-relocation-plus/releases/download/v1.0.8/Relocation+-v1.0.8-any.zip",
+            "checksum": "sha256:3820ccd8cfd5d8736f72edc60b35caf830b043873c36649ba526f34515167481"
+          }
+        ]
+      },
+      {
+        "version": "1.0.7",
+        "tag": "v1.0.7",
+        "released_at": "2026-10-15T09:39:58.3336413Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.107` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.107`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-relocation-plus/releases/download/v1.0.7/Relocation+-v1.0.7-any.zip",
+            "checksum": "sha256:2b71905d65a88b897642f229103d033934bc944480f4720674e7221cb004ed44"
+          }
+        ]
+      },
+      {
+        "version": "1.0.6",
+        "tag": "v1.0.6",
+        "released_at": "2026-10-13T23:51:12.6888497Z",
+        "channel": "Stable",
+        "release_notes": "Added a thumbnail and an icon for the plugin. Nothing else changed.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-relocation-plus/releases/download/v1.0.6/Relocation+-v1.0.6-any.zip",
+            "checksum": "sha256:829b9651e35a2c82f4ae232c73f2f416730b9fefbfef59f8c595f032cace3754"
+          }
+        ]
+      },
+      {
+        "version": "1.0.5",
+        "tag": "v1.0.5",
+        "released_at": "2026-10-13T19:40:44.8323987Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.104` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-relocation-plus/releases/download/v1.0.5/Relocation+-v1.0.5-any.zip",
+            "checksum": "sha256:ad03bcea2076524966095640ad06253b10589edc11929f01a30f0add40d28657"
+          }
+        ]
+      },
+      {
+        "version": "1.0.4",
+        "tag": "v1.0.4",
+        "released_at": "2026-10-06T21:39:52.5271375Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.99` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.99`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-relocation-plus/releases/download/v1.0.4/Relocation+-v1.0.4-any.zip",
+            "checksum": "sha256:ec4926b19cece03ab0c1b13e01a503b814c4075ac2cf63cbf7fa559664efa6b6"
+          }
+        ]
+      },
+      {
+        "version": "1.0.3",
+        "tag": "v1.0.3",
+        "released_at": "2026-10-03T16:54:19.4228918Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.98` release. Extra files are moved or deleted along with their video as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.98`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-relocation-plus/releases/download/v1.0.3/Relocation+-v1.0.3-any.zip",
+            "checksum": "sha256:57fe661e95aea691a398c9b3135cf9e802fa61df388851780b2ec653f6bc3143"
+          }
+        ]
+      },
+      {
+        "version": "1.0.2",
+        "tag": "v1.0.2",
+        "released_at": "2026-09-30T16:38:16.7328084Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.95` release. Extra files are moved or deleted along with their video as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.95`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-relocation-plus/releases/download/v1.0.2/Relocation+-v1.0.2-any.zip",
+            "checksum": "sha256:f2acd5500b4b2c286b5903f9046b489375f9fc0a91a8b24a6d4f43bde15f8a91"
+          }
+        ]
+      },
+      {
+        "version": "1.0.1",
+        "tag": "v1.0.1",
+        "released_at": "2026-09-18T04:41:43.5682469Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the current abstractions, and moved release packaging onto `shoko-build` with the published manifest on the `metadata` branch.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.89`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-relocation-plus/releases/download/v1.0.1/Relocation+-v1.0.1-any.zip",
+            "checksum": "sha256:0a6e79c1791a66d46d65c802bc73ba5f2252198aed0e46318b5572716b7bdabb"
+          }
+        ]
+      },
+      {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "source_revision": "6dc0088683cd3c45425639c0f4044044773a7fde",
+        "released_at": "2026-04-28T18:02:35Z",
+        "channel": "Stable",
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-relocation-plus/releases/download/v1.0.0/Shoko.Plugin.RelocationPlus-v1.0.0-any.zip",
+            "checksum": "238d863853f43b61c1ad2fc25da9a0cb005c1a3e6dc2d6aa3d6b66c5f636821f"
+          }
+        ]
+      }
+    ],
+    "thumbnail_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-relocation-plus/stable/source/Assets/thumbnail.svg",
+    "icon_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-relocation-plus/stable/source/Assets/icon.svg"
   },
   {
+    "$schema": "https://raw.githubusercontent.com/ShokoAnime/ShokoServer/master/Shoko.BuildTools/manifest.schema.json",
+    "type": "package",
     "id": "2f4b7a3e-9c1d-4f6a-8b2e-5d3c7a1f9e0b",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-syoboi/metadata/manifest.json"
+    "name": "Syoboi Calendar",
+    "overview": "Provides Japanese TV and streaming broadcast schedules from cal.syoboi.jp (Syoboi Calendar).",
+    "authors": "revam",
+    "repository_url": "https://github.com/revam/dotnet-shoko-plugin-syoboi",
+    "homepage_url": "https://cal.syoboi.jp/",
+    "tags": [
+      "service-registration",
+      "airing-schedule",
+      "calendar",
+      "syoboi",
+      "broadcast"
+    ],
+    "releases": [
+      {
+        "version": "1.3.1",
+        "tag": "v1.3.1",
+        "released_at": "2026-10-16T07:18:29.0903248Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.108` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.108`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-syoboi/releases/download/v1.3.1/SyoboiCalendar-v1.3.1-any.zip",
+            "checksum": "sha256:84ff4fcbfc18f043d4c35e979f8324057dc558ca9d0ef15d4342369af2c95553"
+          }
+        ]
+      },
+      {
+        "version": "1.3.0",
+        "tag": "v1.3.0",
+        "released_at": "2026-10-15T09:40:01.1053995Z",
+        "channel": "Stable",
+        "release_notes": "Its settings are now the plugin's own settings, so a client can open them from the plugin. Otherwise behaves as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.107`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-syoboi/releases/download/v1.3.0/SyoboiCalendar-v1.3.0-any.zip",
+            "checksum": "sha256:48858e81d83638ac104857606f9ea31598a3427d52019c839dc355d0133ad36e"
+          }
+        ]
+      },
+      {
+        "version": "1.2.3",
+        "tag": "v1.2.3",
+        "released_at": "2026-10-13T19:39:59.2060262Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.104` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-syoboi/releases/download/v1.2.3/SyoboiCalendar-v1.2.3-any.zip",
+            "checksum": "sha256:74e5a57bdc59cdb707a4bf1d7e19e80b04fd3e72dddba90dbfe13076b9a2fd68"
+          }
+        ]
+      },
+      {
+        "version": "1.2.2",
+        "tag": "v1.2.2",
+        "released_at": "2026-10-08T23:04:12.6790915Z",
+        "channel": "Stable",
+        "release_notes": "The User-Agent is built the same way as in the other plugins: the plugin's name and version, plus its repository URL from the plugin's own info. The two User-Agent settings are gone; old values in the configuration file are ignored.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.100` or later.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-syoboi/releases/download/v1.2.2/SyoboiCalendar-v1.2.2-any.zip",
+            "checksum": "sha256:2af92b855a10c0c1b28583df1e553fb70525ae1901513f2d04aaa17075e4f51c"
+          }
+        ]
+      },
+      {
+        "version": "1.2.1",
+        "tag": "v1.2.1",
+        "released_at": "2026-10-08T02:22:12.3348056Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.100` release, where the interfaces that tie a configuration to its provider moved into `Shoko.Abstractions.Config`. Schedules from Syoboi Calendar are fetched and written as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.100`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-syoboi/releases/download/v1.2.1/SyoboiCalendar-v1.2.1-any.zip",
+            "checksum": "sha256:e7ec7856dc3d01d9786d2b23df89e83b05cd066891aedd121dcb2635b7f744b7"
+          }
+        ]
+      },
+      {
+        "version": "1.2.0",
+        "tag": "v1.2.0",
+        "released_at": "2026-10-06T21:27:55.3318402Z",
+        "channel": "Stable",
+        "release_notes": "Airings are now stored by their place in the schedule, so episodes AniDB doesn't list yet are kept and link up once AniDB adds them. Titles whose episode count keeps running across cours are numbered from the start of the anime they belong to, learned from slots on AniDB's air dates. Channels are registered in Japan instead of with a suffix in their name.\n\nRebuilt against the abstractions `6.0.0-alpha.99` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.99`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-syoboi/releases/download/v1.2.0/SyoboiCalendar-v1.2.0-any.zip",
+            "checksum": "sha256:f99ba967666cd3dfb298fa94eff081812b7ca44d22e7c609e1aa8a0b07b97960"
+          }
+        ]
+      },
+      {
+        "version": "1.1.2",
+        "tag": "v1.1.2",
+        "released_at": "2026-10-03T16:54:36.4667468Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.98` release. Airing schedules from Syoboi Calendar are fetched and written as before. The plugin also has its own icon and thumbnail now.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.98`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-syoboi/releases/download/v1.1.2/SyoboiCalendar-v1.1.2-any.zip",
+            "checksum": "sha256:936d86e3b4fa25ca040af7d13c29eb2fd52b4cfd9e7f170276355c81747e247d"
+          }
+        ]
+      },
+      {
+        "version": "1.1.1",
+        "tag": "v1.1.1",
+        "released_at": "2026-10-01T20:12:03.8499372Z",
+        "channel": "Stable",
+        "release_notes": "The Syoboi API client now keeps one HTTP handler for the life of the server, recycling its connections every few minutes instead. Before, the airing schedule provider held the typed client past the factory's handler lifetime, so the expired handler could never be disposed and the factory's cleanup kept reporting one remaining item.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.95`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-syoboi/releases/download/v1.1.1/SyoboiCalendar-v1.1.1-any.zip",
+            "checksum": "sha256:63ef98700bacc653aee50d54736ce3be6290e3a25fd2255317c563d2dfa5aa7c"
+          }
+        ]
+      },
+      {
+        "version": "1.1.0",
+        "tag": "v1.1.0",
+        "released_at": "2026-09-30T16:38:49.2815801Z",
+        "channel": "Stable",
+        "release_notes": "Reruns are kept and written as `Rerun` airings instead of being dropped, and slots whose comment marks them as an advance airing (先行放送, 先行配信) are written as `Advance` airings. The server leaves both out of a schedule's cadence, delays and estimates, and each airing is keyed by its own slot so neither collides with the regular showing. Double premieres and one-hour specials, which Syoboi lists without an episode number and names by a range such as `#1～#2` in the subtitle, now become one airing per episode at the slot's time instead of being skipped. Rebuilt against the abstractions `6.0.0-alpha.95` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.95`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-syoboi/releases/download/v1.1.0/SyoboiCalendar-v1.1.0-any.zip",
+            "checksum": "sha256:0e2d205c6063fc29afc9c81120ad34b177d60e58727391de1829fa524f15f6c1"
+          }
+        ]
+      },
+      {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "released_at": "2026-09-18T04:15:41.7241703Z",
+        "channel": "Stable",
+        "release_notes": "First release.\n\nProvides Japanese TV and streaming broadcast schedules from [cal.syoboi.jp](https://cal.syoboi.jp) as an airing schedule provider, including per-channel broadcast slots, delays and withdrawals.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.89`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-syoboi/releases/download/v1.0.0/SyoboiCalendar-v1.0.0-any.zip",
+            "checksum": "sha256:a90957646bea96ed8aae340e85958d79676dd4893ec1d87b6bce439316fd89b3"
+          }
+        ]
+      }
+    ],
+    "thumbnail_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-syoboi/stable/source/Assets/thumbnail.svg",
+    "icon_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-syoboi/stable/source/Assets/icon.svg"
   },
   {
     "id": "12126642-8c32-455f-aca1-e1a2f7b35a8c",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-tvdb/metadata/manifest.json"
+    "name": "TvDB",
+    "overview": "Supplies series, season and episode metadata from TvDB's APIv4 for the `tvdb` metadata source, through Shoko's metadata provider contract.",
+    "authors": "revam",
+    "repository_url": "https://github.com/revam/dotnet-shoko-plugin-tvdb",
+    "tags": [
+      "service-registration"
+    ],
+    "releases": [
+      {
+        "version": "1.5.0",
+        "tag": "v1.5.0",
+        "released_at": "2026-10-16T07:18:51.1699196Z",
+        "channel": "Stable",
+        "release_notes": "People are now named like every other entry: their name per language is an official title next to their main name, in the languages the server names people by, and their biographies are overviews per language, with the same one first on every refresh. Where a person was born is stored as their place of birth.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.108`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-tvdb/releases/download/v1.5.0/TvDB-v1.5.0-any.zip",
+            "checksum": "sha256:b7d6e2ad11fdc5f2c80465bf6f57cf1ef3754c9fa7db41ab25e57810de9a5c8e"
+          }
+        ]
+      },
+      {
+        "version": "1.4.0",
+        "tag": "v1.4.0",
+        "released_at": "2026-10-15T09:40:09.7716038Z",
+        "channel": "Stable",
+        "release_notes": "Its settings are now the plugin's own settings, so a client can open them from the plugin. Otherwise behaves as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.107`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-tvdb/releases/download/v1.4.0/TvDB-v1.4.0-any.zip",
+            "checksum": "sha256:8b4631bff595bd2538ce9c44ce6e3c6b395d641a64fd47e5823c396ca5bb0799"
+          }
+        ]
+      },
+      {
+        "version": "1.3.1",
+        "tag": "v1.3.1",
+        "released_at": "2026-10-13T19:40:18.7006284Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.104` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-tvdb/releases/download/v1.3.1/TheTVDBMetadata-v1.3.1-any.zip",
+            "checksum": "sha256:2031198009e229a9b77ecaff73a276e998f869d65301f60a48ec1cfdbc87f155"
+          }
+        ]
+      },
+      {
+        "version": "1.3.0",
+        "tag": "v1.3.0",
+        "released_at": "2026-10-08T23:04:11.4351251Z",
+        "channel": "Stable",
+        "release_notes": "The plugin now asks users to support TVDB. It uses Shoko's licensed TVDB key, so the subscriber PIN setting and a start-up note point to subscribing at https://thetvdb.com/subscribe or adding and updating series data on https://thetvdb.com. A PIN that TVDB refuses is dropped with a warning instead of blocking the login.\n\nRate limits, server errors and a refused API key are reported as suspensions, so the server and the Web UI can show why TVDB's jobs are waiting. A refused key now holds until the settings are saved, other credentials are tried, or an admin lifts it, instead of retrying after an hour.\n\nBuilt against the abstractions `6.0.0-alpha.101` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.101`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-tvdb/releases/download/v1.3.0/TheTVDBMetadata-v1.3.0-any.zip",
+            "checksum": "sha256:7b00f84d8dd44a8941a90be6532680b81408fb3b18fd5918ef4fa8dbe6c6d4fe"
+          }
+        ]
+      },
+      {
+        "version": "1.2.1",
+        "tag": "v1.2.1",
+        "released_at": "2026-10-08T02:22:27.0947266Z",
+        "channel": "Stable",
+        "release_notes": "The plugin's configuration is now marked as a metadata provider configuration, so it registers with the provider rather than as a standalone configuration. Rebuilt against the abstractions `6.0.0-alpha.100` release, where the interfaces that tie a configuration to its provider moved into `Shoko.Abstractions.Config`.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.100`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-tvdb/releases/download/v1.2.1/TheTVDBMetadata-v1.2.1-any.zip",
+            "checksum": "sha256:4e27303480a2c933dd1cbe635ef1cb3b166fc4edc7f20a7802f5f8f897a9bd45"
+          }
+        ]
+      },
+      {
+        "version": "1.2.0",
+        "tag": "v1.2.0",
+        "released_at": "2026-10-06T21:29:43.4896036Z",
+        "channel": "Stable",
+        "release_notes": "Cast, crew and networks are now switched on and off with the provider's kinds instead of the plugin's own download settings, which are gone; a person's own record is fetched while the `creator` kind is on. Orderings now take their season names from the server: an ordering's season type is its English main title, and a group keeps only a season name of its own.\n\nRebuilt against the abstractions `6.0.0-alpha.99` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.99`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-tvdb/releases/download/v1.2.0/TheTVDBMetadata-v1.2.0-any.zip",
+            "checksum": "sha256:cd8954d5920d76b99f65af026ef937ddc8a034405001b534f988a1d8555660da"
+          }
+        ]
+      },
+      {
+        "version": "1.1.0",
+        "tag": "v1.1.0",
+        "released_at": "2026-10-03T16:55:11.3114056Z",
+        "channel": "Stable",
+        "release_notes": "The plugin is now called TvDB. Translated titles and overviews now follow the server's language orders instead of the plugin's own Translation Languages setting, which is gone. Two new settings, Download All Titles and Download All Overviews, keep a show's names or overviews in every language TvDB has; episodes always follow the server's orders, and a show's English name and overview are always kept.\n\nShows, episodes, people, characters, studios and networks now link to their pages on TvDB, and people, characters, studios and networks can be refreshed on their own when Shoko asks for one. Where TvDB places a special, before or after a given season or episode, is now stored with the special in the aired order. Seasons no longer store \"Season 1\" or \"Specials\" as their title; the server shows that name itself for a season TvDB gives no name of its own. The plugin also logs when its jobs are paused for TvDB's rate limits and when they resume, and it has its own icon and thumbnail.\n\nRebuilt against the abstractions `6.0.0-alpha.98` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.98`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-tvdb/releases/download/v1.1.0/TheTVDBMetadata-v1.1.0-any.zip",
+            "checksum": "sha256:7af8f8c40a52fca253e67a3caba064b9db45fd31c9033a04819927d1b274e3ec"
+          }
+        ]
+      },
+      {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "released_at": "2026-09-30T16:23:54.6398574Z",
+        "channel": "Stable",
+        "release_notes": "First release. Supplies TheTVDB v4 series, season and episode metadata to Shoko through its metadata provider contract, for the `tvdb` metadata source. By default it also stores TheTVDB's other season types, such as the DVD and absolute orders, as alternate orderings. Official builds ship with a licensed project key, so no personal API key or subscriber PIN is needed.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.95`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-tvdb/releases/download/v1.0.0/TheTVDBMetadata-v1.0.0-any.zip",
+            "checksum": "sha256:51780eae6f6222cec5bb983b9e536b9ad0f8f57c8284eecd402cc8b9f1514263"
+          }
+        ]
+      }
+    ],
+    "thumbnail_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-tvdb/stable/source/Assets/thumbnail.svg",
+    "icon_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-tvdb/stable/source/Assets/icon.svg"
   },
   {
+    "$schema": "https://raw.githubusercontent.com/ShokoAnime/ShokoServer/master/Shoko.BuildTools/manifest.schema.json",
+    "type": "package",
     "id": "5c09a10b-b36f-4a04-93db-6b085a0aafc2",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-tvmaze/metadata/manifest.json"
+    "name": "TVmaze",
+    "overview": "Fills in broadcast and streaming airing schedules for TMDB-linked shows from TVmaze, keyed through the TVDB ID.",
+    "authors": "revam",
+    "repository_url": "https://github.com/revam/dotnet-shoko-plugin-tvmaze",
+    "tags": [
+      "service-registration",
+      "airing",
+      "schedule",
+      "tvmaze",
+      "tmdb",
+      "calendar"
+    ],
+    "releases": [
+      {
+        "version": "1.2.1",
+        "tag": "v1.2.1",
+        "released_at": "2026-10-16T07:18:36.4753073Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.108` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.108`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-tvmaze/releases/download/v1.2.1/TVmaze-v1.2.1-any.zip",
+            "checksum": "sha256:760e411b3f2f9400d0ba2b82abb1dc5e5012a83d91e2c8c2886cf9569c304122"
+          }
+        ]
+      },
+      {
+        "version": "1.2.0",
+        "tag": "v1.2.0",
+        "released_at": "2026-10-15T09:40:12.1415777Z",
+        "channel": "Stable",
+        "release_notes": "Its settings are now the plugin's own settings, so a client can open them from the plugin. Otherwise behaves as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.107`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-tvmaze/releases/download/v1.2.0/TVmaze-v1.2.0-any.zip",
+            "checksum": "sha256:408bafd47bfeeefe73038edc64e973de0ff28c0ecdbc321449902069312859c2"
+          }
+        ]
+      },
+      {
+        "version": "1.1.2",
+        "tag": "v1.1.2",
+        "released_at": "2026-10-13T19:40:00.2277847Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.104` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-tvmaze/releases/download/v1.1.2/TVmazeAiringSchedule-v1.1.2-any.zip",
+            "checksum": "sha256:5ba3e725c19bed79fcef01ed61cdcdfc604184380738b4364292d10df22c55b5"
+          }
+        ]
+      },
+      {
+        "version": "1.1.1",
+        "tag": "v1.1.1",
+        "released_at": "2026-10-08T02:22:29.8712353Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.100` release, where the interfaces that tie a configuration to its provider moved into `Shoko.Abstractions.Config`. Schedules from TVmaze are fetched and written as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.100`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-tvmaze/releases/download/v1.1.1/TVmazeAiringSchedule-v1.1.1-any.zip",
+            "checksum": "sha256:1319d2df4bb89673831beaff3046c826573b02bf70e4245a506cb800d2a070af"
+          }
+        ]
+      },
+      {
+        "version": "1.1.0",
+        "tag": "v1.1.0",
+        "released_at": "2026-10-06T21:27:59.1140948Z",
+        "channel": "Stable",
+        "release_notes": "The plugin is now called TVmaze. Airings are now stored by their place in the season, so every numbered episode with an air time is kept even before the linked TMDb season lists it, and finished seasons end at their last episode. Channels are registered under their own name in their country instead of with a suffix.\n\nRebuilt against the abstractions `6.0.0-alpha.99` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.99`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-tvmaze/releases/download/v1.1.0/TVmazeAiringSchedule-v1.1.0-any.zip",
+            "checksum": "sha256:46132f0c7f7d735d73d28a8bed1b1ddd2998c4fbae385c779786430a71eabe0d"
+          }
+        ]
+      },
+      {
+        "version": "1.0.2",
+        "tag": "v1.0.2",
+        "released_at": "2026-10-03T16:54:47.8849503Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.98` release, where TMDb data comes from the bundled TMDb plugin instead of the core. Schedules are still keyed through each linked TMDb show's TheTVDB ID, now read from the show's cross-source IDs, and written as before. The plugin also has its own icon and thumbnail now.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.98`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-tvmaze/releases/download/v1.0.2/TVmazeAiringSchedule-v1.0.2-any.zip",
+            "checksum": "sha256:d5acc01bead4359803674cc8a7f64c4bce01d5332e638d132dfc67ef4777828b"
+          }
+        ]
+      },
+      {
+        "version": "1.0.1",
+        "tag": "v1.0.1",
+        "released_at": "2026-09-30T16:38:27.6051199Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.95` release, where a Shoko series reaches its TMDB shows through its linked series. Schedules are still keyed through each linked TMDB show's TheTVDB ID and written as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.95`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-tvmaze/releases/download/v1.0.1/TVmazeAiringSchedule-v1.0.1-any.zip",
+            "checksum": "sha256:8d922103dff694826866be4b62e88bee18aff207822f83adb01f526c2de40e8e"
+          }
+        ]
+      },
+      {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "released_at": "2026-09-18T04:19:16.7896563Z",
+        "channel": "Stable",
+        "release_notes": "First release.\n\nFills in broadcast and streaming airing schedules for TMDB-linked shows from [TVmaze](https://www.tvmaze.com), keyed through the TVDB ID. One schedule per season and channel, submitted as a whole line.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.89`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-tvmaze/releases/download/v1.0.0/TVmazeAiringSchedule-v1.0.0-any.zip",
+            "checksum": "sha256:28aaaf8e510eab9ef7ebd6ea8d3fe5db05fd3ebdbe673183171d197b3514a8c0"
+          }
+        ]
+      }
+    ],
+    "thumbnail_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-tvmaze/stable/source/Assets/thumbnail.svg",
+    "icon_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-tvmaze/stable/source/Assets/icon.svg"
   },
   {
     "id": "db81e3b3-67de-48d6-acd0-7da499cb30c5",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-upload-file/metadata/manifest.json"
+    "name": "Upload File",
+    "overview": "Plugin for uploading files to staging areas on the server.",
+    "authors": "revam",
+    "repository_url": "https://github.com/revam/dotnet-shoko-plugin-upload-file",
+    "tags": [
+      "service-registration",
+      "upload",
+      "staging",
+      "file-management"
+    ],
+    "releases": [
+      {
+        "version": "1.1.2",
+        "tag": "v1.1.2",
+        "released_at": "2026-10-18T22:01:19.7936164Z",
+        "channel": "Stable",
+        "release_notes": "Accepts uploads larger than 128 MiB: the ASP.NET multipart form limit rejected them with a 400 before the upload ran. Also creates the area directory before writing, so the first upload into a new area path no longer fails.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.108`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.1.2/UploadFile-v1.1.2-any.zip",
+            "checksum": "sha256:a7738117aff8f0845ff568aabcbe06354c9149bef2341dc3a581120ff56e83c1"
+          }
+        ]
+      },
+      {
+        "version": "1.1.1",
+        "tag": "v1.1.1",
+        "released_at": "2026-10-16T07:18:38.8929054Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.108` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.108`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.1.1/UploadFile-v1.1.1-any.zip",
+            "checksum": "sha256:b4c4b3d226a7f4e5931ee230428732d632c85441ce9ac1943a881304fa248a84"
+          }
+        ]
+      },
+      {
+        "version": "1.1.0",
+        "tag": "v1.1.0",
+        "released_at": "2026-10-15T09:40:16.1812931Z",
+        "channel": "Stable",
+        "release_notes": "Its settings are now the plugin's own settings, so a client can open them from the plugin. Otherwise behaves as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.107`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.1.0/UploadFile-v1.1.0-any.zip",
+            "checksum": "sha256:3c2338d36785d9d2330735d0bd887a9b6714f277ebde9a0952755aa1d9568c1e"
+          }
+        ]
+      },
+      {
+        "version": "1.0.9",
+        "tag": "v1.0.9",
+        "released_at": "2026-10-13T23:51:24.0075351Z",
+        "channel": "Stable",
+        "release_notes": "Added a thumbnail and an icon for the plugin. Nothing else changed.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.0.9/UploadFile-v1.0.9-any.zip",
+            "checksum": "sha256:66caf3246c15028db90f9b0ea208a60978ca7f67b81a0ea277e32ce5d19e5fc2"
+          }
+        ]
+      },
+      {
+        "version": "1.0.8",
+        "tag": "v1.0.8",
+        "released_at": "2026-10-13T19:40:50.7828098Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.104` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.0.8/UploadFile-v1.0.8-any.zip",
+            "checksum": "sha256:d67012463f83834b935f4e54c3b057dc85555f9f039caf700b41b80dd8b32c9b"
+          }
+        ]
+      },
+      {
+        "version": "1.0.7",
+        "tag": "v1.0.7",
+        "released_at": "2026-10-06T21:40:03.3024942Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.99` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.99`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.0.7/UploadFile-v1.0.7-any.zip",
+            "checksum": "sha256:2c545459c214451cf0586f01cdf4e9d34b5feb05a487ee57896ebecf4194a97f"
+          }
+        ]
+      },
+      {
+        "version": "1.0.6",
+        "tag": "v1.0.6",
+        "released_at": "2026-10-03T16:54:24.1901175Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.98` release, with no change in behaviour.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.98`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.0.6/UploadFile-v1.0.6-any.zip",
+            "checksum": "sha256:cae4f064af34ffe130eb498683dcb58974256634909df0e1d8fdcd1d57fbf1ee"
+          }
+        ]
+      },
+      {
+        "version": "1.0.5",
+        "tag": "v1.0.5",
+        "released_at": "2026-09-30T16:38:32.9944455Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.95` release, with no change in behaviour.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.95`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.0.5/UploadFile-v1.0.5-any.zip",
+            "checksum": "sha256:6c0cf7373367fc0915ac4516872930601e98cc321bd63883b0156dbd456df6f3"
+          }
+        ]
+      },
+      {
+        "version": "1.0.4",
+        "tag": "v1.0.4",
+        "released_at": "2026-09-18T04:41:54.504739Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the current abstractions, and moved release packaging onto `shoko-build` with the published manifest on the `metadata` branch.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.89`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.0.4/UploadFile-v1.0.4-any.zip",
+            "checksum": "sha256:bdfe81b096bb2a91502e8a20a6b9726175ee91b8f5fb7e2bc8d1a62542b70abe"
+          }
+        ]
+      },
+      {
+        "version": "1.0.3",
+        "tag": "v1.0.3",
+        "source_revision": "736e2007533975f7f3a60e5b23f25153d253e304",
+        "released_at": "2026-06-04T04:07:58Z",
+        "channel": "Stable",
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.0.3/Shoko.Plugin.UploadFile-v1.0.3-any.zip",
+            "checksum": "5fc4af27eb5b61e879f1b21e06b89e5047f6e1ffc850025350c0d7851c4a256b"
+          }
+        ]
+      },
+      {
+        "version": "1.0.2",
+        "tag": "v1.0.2",
+        "source_revision": "6b11a916a70857f2f914ce244caf565432403147",
+        "released_at": "2026-06-04T03:49:41Z",
+        "channel": "Stable",
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.0.2/Shoko.Plugin.UploadFile-v1.0.2-any.zip",
+            "checksum": "df169691a3151aca731d0a1c8098da9b0e539cc2dbf1fd0a03bb3ebc525f2b32"
+          }
+        ]
+      },
+      {
+        "version": "1.0.1",
+        "tag": "v1.0.1",
+        "source_revision": "ebf11bcd35848bdcde2ffd6d89641b87e60ea903",
+        "released_at": "2026-06-04T03:33:46Z",
+        "channel": "Stable",
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.0.1/Shoko.Plugin.UploadFile-v1.0.1-any.zip",
+            "checksum": "c04a3fd27df48302e76fce25f62bdf227d99f9eb76f8cf69dc4198ef09f43016"
+          }
+        ]
+      },
+      {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "source_revision": "bcddde5476d7baeea709aa7bc3e8ab0f9ba4b717",
+        "released_at": "2026-06-04T03:07:47Z",
+        "channel": "Stable",
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.0.0/Shoko.Plugin.UploadFile-v1.0.0-any.zip",
+            "checksum": "d537b4f7908ec6e368a6e70be3e6734bebd811fac09bc8fe48b250b8f9c0cbfb"
+          }
+        ]
+      }
+    ],
+    "thumbnail_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-upload-file/stable/source/Assets/thumbnail.svg",
+    "icon_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-upload-file/stable/source/Assets/icon.svg"
   },
   {
     "id": "d88779b6-3551-4b07-a05e-595b6e167b13",
-    "type": "manifest",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-vouch/metadata/manifest.json"
+    "name": "Vouch",
+    "overview": "Sign in a second device by showing it a code. A device that is awkward to type on displays a short code; a phone that is already signed in confirms it, and the first device receives its own API key.",
+    "authors": "revam",
+    "repository_url": "https://github.com/revam/dotnet-shoko-plugin-vouch",
+    "tags": [
+      "service-registration",
+      "pairing",
+      "device-sign-in",
+      "authentication",
+      "api"
+    ],
+    "releases": [
+      {
+        "version": "1.1.1",
+        "tag": "v1.1.1",
+        "released_at": "2026-10-16T07:18:46.0544361Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.108` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.108`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-vouch/releases/download/v1.1.1/Vouch-v1.1.1-any.zip",
+            "checksum": "sha256:a9a94f1567232a955f0a2c751b20d9140f285ce4275207fccfae8efd752c345e"
+          }
+        ]
+      },
+      {
+        "version": "1.1.0",
+        "tag": "v1.1.0",
+        "released_at": "2026-10-15T09:40:30.5141369Z",
+        "channel": "Stable",
+        "release_notes": "Its settings are now the plugin's own settings, so a client can open them from the plugin. Otherwise behaves as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.107`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-vouch/releases/download/v1.1.0/Vouch-v1.1.0-any.zip",
+            "checksum": "sha256:0a174fffe611393c5ec283f0ffa57fde002a3ddf6bea86e692e937b5b6eef5cf"
+          }
+        ]
+      },
+      {
+        "version": "1.0.5",
+        "tag": "v1.0.5",
+        "released_at": "2026-10-13T23:51:28.3738256Z",
+        "channel": "Stable",
+        "release_notes": "Added a thumbnail and an icon for the plugin. Nothing else changed.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-vouch/releases/download/v1.0.5/Vouch-v1.0.5-any.zip",
+            "checksum": "sha256:1f3c885aa1de6fdddb067dc685953370d32c288c96d1d5c28d2f07411275041d"
+          }
+        ]
+      },
+      {
+        "version": "1.0.4",
+        "tag": "v1.0.4",
+        "released_at": "2026-10-13T19:39:25.1513561Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.104` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.104`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-vouch/releases/download/v1.0.4/Vouch-v1.0.4-any.zip",
+            "checksum": "sha256:98e53f66518f4394aee53fa6e4c3604379eb520fdb314d57391cc806fb1446eb"
+          }
+        ]
+      },
+      {
+        "version": "1.0.3",
+        "tag": "v1.0.3",
+        "released_at": "2026-10-06T21:40:17.2093796Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.99` release.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.99`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-vouch/releases/download/v1.0.3/Vouch-v1.0.3-any.zip",
+            "checksum": "sha256:21de895eba07eacbf9fcc8c38d09e5f719e40ae8dc421059b008b50e16e3cee6"
+          }
+        ]
+      },
+      {
+        "version": "1.0.2",
+        "tag": "v1.0.2",
+        "released_at": "2026-10-03T16:54:36.7317292Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.98` release. Signing in a device with a code works as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.98`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-vouch/releases/download/v1.0.2/Vouch-v1.0.2-any.zip",
+            "checksum": "sha256:659a0b3b49937033b039ac9174d02a31f64132fb83ff091b63e9695cf85bf033"
+          }
+        ]
+      },
+      {
+        "version": "1.0.1",
+        "tag": "v1.0.1",
+        "released_at": "2026-09-30T16:38:24.193865Z",
+        "channel": "Stable",
+        "release_notes": "Rebuilt against the abstractions `6.0.0-alpha.95` release. Signing in a device with a code works as before.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.95`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-vouch/releases/download/v1.0.1/Vouch-v1.0.1-any.zip",
+            "checksum": "sha256:6446305398893ae621316fc2535cf7f8ec054b8bff00534b9486919ce5741ca3"
+          }
+        ]
+      },
+      {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "released_at": "2026-09-18T04:19:34.8591848Z",
+        "channel": "Stable",
+        "release_notes": "First release.\n\nSigns in a second device by showing it a short code. A device that is awkward to type on displays the code; a signed-in device confirms it and the first device receives its own API key.\n\nFailed attempts count towards Shoko's shared authentication lockout, so a client hammering the pairing endpoint is locked out server-wide rather than only here.\n\nRequires Shoko Server with abstractions `6.0.0-alpha.89`.",
+        "dependencies": [],
+        "archives": [
+          {
+            "runtime": "any",
+            "abstraction": "6.0.0",
+            "url": "https://github.com/revam/dotnet-shoko-plugin-vouch/releases/download/v1.0.0/Vouch-v1.0.0-any.zip",
+            "checksum": "sha256:40d478a5e10f74479cdff0182724e32242cd6821c750a4727e796ccf3867e10a"
+          }
+        ]
+      }
+    ],
+    "thumbnail_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-vouch/stable/source/Assets/thumbnail.svg",
+    "icon_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-vouch/stable/source/Assets/icon.svg"
   }
 ]

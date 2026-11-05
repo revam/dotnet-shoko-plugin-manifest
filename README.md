@@ -28,6 +28,16 @@ This will automatically include all available plugins:
 | [Upload File](https://github.com/revam/dotnet-shoko-plugin-upload-file) | File uploads to named staging areas |
 | [Vouch](https://github.com/revam/dotnet-shoko-plugin-vouch) | Sign in a second device by showing it a short code |
 
+## How the feed is built
+
+`sources.json` lists each plugin's own manifest. `scripts/build_feed.py`
+fetches them and writes `manifest.json` with every package written out, in
+that order; a plugin whose manifest cannot be fetched keeps its packages
+from the previous build. The **Build the feed** workflow runs it every hour,
+by hand, and when the list changes, and commits `manifest.json` only when it
+changed, so a release shows up within the hour. Adding a plugin is one entry
+in `sources.json`, when it first releases.
+
 ## License
 
 This project is licensed under the MIT License.

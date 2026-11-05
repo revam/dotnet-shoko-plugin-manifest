@@ -1,0 +1,44 @@
+# Builds manifest.json, every package written out, from the plugin
+# manifests listed in sources.json. Hourly, by hand, and when the list or
+# the script changes. Commits only when the feed changed.
+name: Build the feed
+
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - metadata
+    paths:
+      - sources.json
+      - scripts/build_feed.py
+      - .github/workflows/build-feed.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-feed
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Build the feed
+        run: python3 scripts/build_feed.py
+
+      - name: Commit the feed if it changed
+        run: |
+          if git diff --quiet -- manifest.json; then
+            echo "The feed is unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add manifest.json
+          git commit -m "repo: update the feed"
+          git push
