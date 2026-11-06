@@ -8,18 +8,6 @@
     "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-fanart/metadata/manifest.json"
   },
   {
-    "id": "a7f3c291-8b4e-4d6a-9c1d-2e5f7b8a0c3d",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-filter-helper/metadata/manifest.json"
-  },
-  {
-    "id": "118ffeee-943d-40b2-af63-2416da4beca9",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-forgotten/metadata/manifest.json"
-  },
-  {
-    "id": "0bb96da1-c996-44a3-9ddb-27961cce0c4d",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-image-manager/metadata/manifest.json"
-  },
-  {
     "id": "031ccc48-94d6-5100-a9e0-e26c49a33319",
     "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-release-exporter/metadata/manifest.json"
   },
@@ -42,13 +30,5 @@
   {
     "id": "5c09a10b-b36f-4a04-93db-6b085a0aafc2",
     "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-tvmaze/metadata/manifest.json"
-  },
-  {
-    "id": "db81e3b3-67de-48d6-acd0-7da499cb30c5",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-upload-file/metadata/manifest.json"
-  },
-  {
-    "id": "d88779b6-3551-4b07-a05e-595b6e167b13",
-    "url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-vouch/metadata/manifest.json"
   }
 ]
